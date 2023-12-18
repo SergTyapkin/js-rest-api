@@ -1,4 +1,6 @@
 # REST API
+![npm](https://img.shields.io/npm/dt/%40sergtyapkin%2Frest-api)
+
 REST API module for your app with pretty documenting
 
 ----
