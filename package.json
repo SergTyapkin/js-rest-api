@@ -1,0 +1,17 @@
+{
+  "name": "@sergtyapkin/rest-api",
+  "version": "1.0.1",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Sergey Tyapkin",
+    "email": "Sererga115@gmail.com"
+  },
+  "homepage": "https://github.com/SergTyapkin/js-rest-api",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
