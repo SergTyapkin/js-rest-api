@@ -1,4 +1,8 @@
 export default class REST_API {
+    constructor(base_path = null) {
+        this.base_path = base_path;
+    }
+
     post(path, data = {}) {
         return this.request('POST', path, data);
     }
@@ -19,16 +23,16 @@ export default class REST_API {
 
     async request(method, path, data) {
         const response = await fetch(
-            path,
-            {
-                method: method,
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                mode: 'cors',
-                credentials: 'include',
-            }
+          (this.base_path ? this.base_path : '') + path,
+          {
+              method: method,
+              body: JSON.stringify(data),
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              mode: 'cors',
+              credentials: 'include',
+          }
         );
         let parsedObject = {};
         try {
