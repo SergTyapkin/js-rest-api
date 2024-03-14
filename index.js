@@ -41,7 +41,7 @@ export default class REST_API {
         }
         return {
             data: parsedObject,
-            code: response.code,
+            status: response.status,
             ok: response.ok,
         };
     }
