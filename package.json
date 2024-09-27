@@ -1,13 +1,13 @@
 {
   "name": "@sergtyapkin/rest-api",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "license": "MIT",
   "author": {
     "name": "Sergey Tyapkin",
     "email": "Sererga115@gmail.com"
   },
-  "main": "./dist/index.ts",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "keywords": [
     "rest",
