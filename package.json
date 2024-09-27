@@ -7,11 +7,27 @@
     "name": "Sergey Tyapkin",
     "email": "Sererga115@gmail.com"
   },
+  "main": "./dist/index.ts",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "rest",
+    "api",
+    "requests",
+    "fetch"
+  ],
   "homepage": "https://github.com/SergTyapkin/js-rest-api",
-  "scripts": {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergTyapkin/js-rest-api.git"
   },
+  "bugs": {
+    "url": "https://github.com/SergTyapkin/js-rest-api/issues"
+  },
+  "scripts": {},
   "dependencies": {
   },
   "devDependencies": {
+    "@types/node": "^22.7.3",
+    "typescript": "^5.6.2"
   }
 }
