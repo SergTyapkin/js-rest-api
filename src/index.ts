@@ -48,7 +48,9 @@ export default class REST_API {
     try {
       parsedObject = JSON.parse(await response.text()) || {};
     } catch (err) {
-      throw TypeError(`Gotten not JSON-parsable response body from server. Server must response with only objects (not arrays or strings) in JSON format.\nError from 'JSON.parse' method: ${err}`);
+      if (response.ok) {
+        throw TypeError(`Gotten not JSON-parsable response body from server. Server must response with only objects (not arrays or strings) in JSON format.\nError from 'JSON.parse' method: ${err}`);
+      }
     }
     return {
       data: parsedObject,
